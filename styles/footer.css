@@ -1,0 +1,24 @@
+footer{
+    width: 100%;
+    background: var(--primary-color-red);
+    height: auto;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer *{
+    color: var(--secondary-color-beige);
+    text-align: center;
+}
+
+footer .logo{
+    font-family: 'ADELIA', sans-serif;
+}
+
+footer .cc{
+    font-weight: 300;
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+}

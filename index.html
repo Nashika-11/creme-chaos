@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creme Chaos</title>
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/styles/base.css">
     <link rel="stylesheet" href="/styles/nav.css">
     <link rel="stylesheet" href="/styles/landing-page.css">
+    <link rel="stylesheet" href="/styles/menu.css">
+    <link rel="stylesheet" href="/styles/about.css">
+    <link rel="stylesheet" href="/styles/services.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/aos.css">
+
+    <script src="scripts/mobile.js" defer></script>
+<script src="scripts/aos.js" defer></script>
 </head>
 <body>
     <header id="main-header">
@@ -17,8 +27,8 @@
         <nav>
             <ul  class="nav-items">
                 <li class="hidden stager"><a href="#about">About Us</a></li>
-                <li class="hidden stager"><a href="#projects">Menu</a></li>
-                <li class="hidden stager"><a href="#services">How to Order</a></li>
+                <li class="hidden stager"><a href="#menu">Menu</a></li>
+                <li class="hidden stager"><a href="#order">Order</a></li>
                 <li class="not hidden stager"><a href="https://on.contra.com/kL7WB8" class="btn">Get in touch</a></li>
             </ul>
         </nav>
@@ -34,19 +44,97 @@
             <ul  class="nav-items">
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#menu">Menu</a></li>
-                <li class="btn btn-alt"><a href="https://on.contra.com/kL7WB8">How to Order</a></li>
+                <li><a href="#order">How to order</a></li>
+                <li class="btn"><a href="https://on.contra.com/kL7WB8">Get in touch</a></li>
             </ul>
         </nav>  
       </aside>
 
       <main>
         <section id="landing-page">
-            <div class="hero-img zoom-in"></div>
+            <div class="hero-img"></div>
             <div class="content">
                 <h1 class="title slide-out">Indulge in esctasy!</h1>
-                <p class="caption">Elevate your dessert game with our exquisite delights. Made with love Just for you!</p>
+                <p class="caption hidden">Elevate your dessert game with our exquisite delights. Made with love Just for you!</p>
+                <a href="#menu" class="btn btn-alt scale-out">LEARN MORE</a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h1 class="title scale-out">MENU</h1>
+        <ul class="menu-grid">
+            <li class="slide-out stager">
+                <div class="image"><img src="images/cake-shots.jpg" alt=""></div>
+                <h2 class="caption">Cake shots</h2>
+                <p><a href="">Explore Varieties</a></p>
+            </li>
+            <li class="slide-out stager">
+                <div class="image"><img src="images/cheesecake-shots.jpg" alt=""></div>
+                <h2 class="caption">Mousse /Cheesecake Shots</h2>
+                <p><a href="">Explore Varieties</a></p>
+            </li>
+            <li class="slide-out stager">
+                <div class="image"><img src="images/panna-cotta.jpg" alt=""></div>
+                <h2 class="caption">Panna Cotta Shots</h2>
+                <p><a href="">Explore Varieties</a></p>
+            </li>
+            <li class="slide-out stager">
+                <div class="image"><img src="images/Donuts.jpg" alt=""></div>
+                <h2 class="caption">Brioche Donuts</h2>
+                <p><a href="">Explore Varieties</a></p>
+            </li>
+            <li class="slide-out stager">
+                <div class="image"><img src="images/mousse.jpg" alt=""></div>
+                <h2 class="caption">Mousse cake/Cheesecake</h2>
+                <p><a href="">Explore Varieties</a></p>
+            </li>
+            <li class="slide-out stager">
+                <div class="image"><img src="images/chocolate-cake.jpg" alt=""></div>
+                <h2 class="caption">Truffle Cake</h2>
+                <p><a href="">Explore Varieties</a></p>
+            </li>
+            
+        </ul>
+    </section>
+
+    <section id="about">
+        <div class="image scale-out"><img src="images/01 Embossed Business Card Mockup On Diamond Plate.png" alt=""></div>
+        <div class="content">
+            <p class="title slide-out stager"><span></span> ABOUT US</p>
+            <h2 class="caption hidden">Discover The Art of fine pastry</h2>
+            <p class="description slide-out stager">Our desserts are meticulously crafted, free from gelatin and featuring only the finest quality ingredients. Each dessert embodies a blend of classic and innovative taste. Homebaked just for you.</p>
+        </div>
+    </section>
+
+    <section id="order">
+        <p class="title slide-out"><span></span>ORDER GUIDE</p>
+        <h2 class="caption hidden">Follow these steps to place your order</h2>
+        <div class="order-guide">
+            <div class="guide slide-out stager">
+                <h2>Place your order 2-3 days prior</h2>
+                <p>To place an order, you need to write to us via DM <a href="">@creme_chaos</a></p>
+            </div>
+            <div class="guide slide-out stager">
+                <h2>A general Invoice along with a QR code will be sent to you</h2>
+                <p>To confirm your order 65% of advance payment is required</p>
+            </div>
+            <div class="guide slide-out stager">
+                <h2>Order Pickup</h2>
+                 <p> On the day of your order, you can come and pick it up at anytime, according to our Business hours</p>
+                 <p>The due payment should be fullfilled on the day of pick up</p>
+            </div>
         </div>
     </section>
       </main>
+      <footer>
+        <ul class="contact">
+            <li class="hidden stager">
+                <p class="logo">Creme Chaos Patisserie - By Nashika</p>
+            </li>
+            <li class="hidden stager">
+                <p class="cc">Copyrights claims 2024 - Designed & Developed By Nashika</p>
+            </li>
+        </ul>
+      </footer>
 </body>
 </html>

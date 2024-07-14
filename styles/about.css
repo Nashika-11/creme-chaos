@@ -1,0 +1,83 @@
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 65%;
+    margin: 3rem auto;
+    gap: 3rem;
+
+}
+
+#about .image{
+    height: 250px;
+    width: 100%;
+    position: relative;
+}
+
+#about .image::before, .project .image:before{
+    content: '';
+    position: absolute;
+    left: 10%;
+    bottom:10px;
+    width: 90%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    transform-origin: left;
+    transform: skewY(5deg);
+    z-index: -1;
+    filter: blur(10px);
+}
+
+#about .image::after, .project .image:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width: 50%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    transform-origin: right;
+    transform: skewY(-8deg);
+    z-index: -1;
+    filter: blur(10px);
+}
+
+#about .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#about .content > *{
+    margin-bottom: 1rem;
+    color: var(--primary-color-red);
+    font-weight: 350;
+}
+
+#about .content .title span{
+    background: var(--primary-color-red);
+    width: 50px;
+    height: 1px;
+    margin: 0.32rem 0;
+    display: inline-block;
+}
+
+#about .content .caption{
+    font-weight: 700;
+    font-family: 'ADELIA', sans-serif;
+}
+
+@media (min-width: 48rem) {
+    #about{
+        flex-direction: row;
+    }
+
+    #about .content,#about .image{
+        width: 50%;
+    }
+
+    #about .content{
+        padding: 1rem 2rem;
+    }
+}

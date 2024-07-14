@@ -1,0 +1,95 @@
+#order{
+    display: grid;
+    align-items: center;
+    margin: 3rem auto;
+    width: 80%;
+}
+
+#order .title span, #contact .title span{
+    background: var(--primary-color-red);
+    width: 50px;
+    height: 1px;
+    margin: 0.32rem 0;
+    display: inline-block;
+}
+
+#order .title{
+    color: var(--primary-color-red);
+    font-weight: 400;
+}
+
+#order .caption, #contact .caption{
+    margin-bottom: 1rem;
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+    color: var(--primary-color-red);
+}
+
+#order .order-guide, .contacts{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,2fr)) ;
+    gap: 1rem;
+    width: 90%;
+    margin: 1rem auto;
+    align-self: center;
+}
+
+.guide{
+    max-width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    box-shadow: -15px -15px 15px rgba(0, 0, 0, 0.329),
+    15px 15px 15px rgba(0, 0, 0, 0.1);
+    background: var(--primary-color-red);
+    text-align: center;
+}
+
+.guide h2,.guide p, .guide a{
+    color: var(--secondary-color-beige);
+    font-weight: 400;
+}
+
+
+
+#contact{
+    margin: 9rem auto;
+    max-width: 80%;
+}
+
+#contact .caption{
+    margin-bottom: 1.5rem;
+}
+
+.contacts li{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contacts li p{
+    width: 20ch;
+}
+
+.contacts i{
+    font-size: var(--font-size-big) ;
+}
+
+@media (min-width: 48rem) {
+
+#contact .title, #contact .caption{
+    text-align: center;
+}
+
+    .contacts li{
+    flex-direction: column;
+    text-align: center;
+    }
+
+}

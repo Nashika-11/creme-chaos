@@ -10,16 +10,18 @@ html{
       --text-color: #000000;
       --text-color-2:white;
   
-        --primary-color-red: #401B1B;
-        --secondary-color-beige:#F2D5BD;
+        --primary-color-red: #1d0b0b;
+        --secondary-color-beige:#d4b49a;
   
         --font-size-xtra-big: 3.5rem;
         --font-size-big: 2rem;
         --font-size-medium: 1rem;
+
   }
   
   body{
-    background: var(--bg-color);
+    background: var(--secondary-color-beige);
+
   }
 
   *{
@@ -51,6 +53,7 @@ html{
     transition: 0.5s;
     cursor: pointer;
     background: transparent;
+   
   }
 
   .btn:hover{
@@ -58,5 +61,9 @@ html{
   }
   
   .btn-alt{
-    border: var(--text-color) solid 1px;
+    background: var(--primary-color-red);
+    color: white;
+    font-size: var(--font-size-small);
+    border: transparent;
+    letter-spacing: .5ch;
   }
