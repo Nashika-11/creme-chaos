@@ -7,7 +7,7 @@ html{
 
   @font-face {
     font-family: font;
-    src: url(/adelia.ttf);
+    src: url(adelia.ttf);
   }
   
   :root{
