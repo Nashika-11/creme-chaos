@@ -6,9 +6,8 @@ html{
   }
 
   @font-face {
-    font-family: font;
-    src:local('') 
-        url(adelia.ttf);
+    font-family: 'adelia';
+    src:url(../font/adelia.ttf);
   }
   
   :root{
