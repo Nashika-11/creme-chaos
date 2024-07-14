@@ -7,7 +7,7 @@
 
 #landing-page .hero-img{
     width: 100%;
-    background: url('images/hero-img.jpg'),no-repeat;
+    background: url('https://res.cloudinary.com/duqweg9fr/image/upload/v1720975837/Creme%20Chaos/hero-img_bzbm1b.jpg'),no-repeat;
     background-position: center;
     background-size: cover;
     min-height: calc(100vh + 8rem);
