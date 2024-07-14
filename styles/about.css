@@ -65,7 +65,7 @@
 
 #about .content .caption{
     font-weight: 700;
-    font-family: 'ADELIA', sans-serif;
+    font-family: font;
 }
 
 @media (min-width: 48rem) {

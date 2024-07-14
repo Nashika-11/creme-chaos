@@ -4,6 +4,11 @@ html{
     position: relative;
     scroll-behavior: smooth;
   }
+
+  @font-face {
+    font-family: font;
+    src: url(/adelia.ttf);
+  }
   
   :root{
       --bg-color: #e8eaec;
