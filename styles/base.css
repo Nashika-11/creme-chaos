@@ -11,8 +11,6 @@ html{
   }
   
   :root{
-      --bg-color: #e8eaec;
-      --text-color: #000000;
       --text-color-2:white;
   
         --primary-color-red: #1d0b0b;
@@ -21,6 +19,7 @@ html{
         --font-size-xtra-big: 3.5rem;
         --font-size-big: 2rem;
         --font-size-medium: 1rem;
+        --font-size-small: 0.9rem;
 
   }
   
@@ -34,7 +33,7 @@ html{
     padding: 0;
     box-sizing: border-box;
     color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 100;
   }
 
@@ -71,4 +70,5 @@ html{
     font-size: var(--font-size-small);
     border: transparent;
     letter-spacing: .5ch;
+    font-weight: 300;
   }

@@ -1,52 +1,66 @@
-#menu{
-    min-height: 100vh;
+
+#main-header{
     background: var(--primary-color-red);
+    padding: 1rem;
+}
+
+
+.varieties{
+    width: 300px;
+    margin: 13rem auto 4rem auto;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--primary-color-red);
+    padding: 1rem;
+}
+
+.varieties div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 10rem;
 }
 
-#menu *{
+.varieties div *{
     color: var(--secondary-color-beige);
-}
-
-#menu .title{
-    font-size: var(--font-size-xtra-big);
-    margin: 4rem auto;
-    letter-spacing: 0.5ch;
-}
-
-#menu .menu-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(12rem,2fr)) ;
-    gap: 1rem;
-    width: 60%;
-    margin: 1rem auto;
-}
-
-.menu-grid li{
-    background: transparent;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.menu-grid li .image{
-    background: black;
-    height: 200px;
-    width: 100%;
-}
-
-.menu-grid li .caption{
-    font-size: var(--font-size-medium);
-    margin-top: 1.5rem;
+    margin-bottom: 1rem;
     font-weight: 300;
 }
 
-.menu-grid img{
+.varieties h2{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    background: var(--secondary-color-beige);
+    color: var(--primary-color-red);
+    font-family: 'adelia';
+    padding: 1rem;
+}
+
+.varieties h2 span{
+    color: var(--primary-color-red);
+    font-weight: 300;
+}
+
+.varieties ul{
+    list-style:inside ;
+    margin: 2.5rem auto;
+}
+
+.varieties p{
+    text-align: center;
+}
+
+.varieties .btn{
+    background: var(--secondary-color-beige);
+    color: var(--primary-color-red);
+    border-radius: 26px;
+}
+
+
+@media (min-width: 48rem) {
+
+    .varieties{
+        width: 400px;
+    }
+
 }

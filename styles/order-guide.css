@@ -18,14 +18,14 @@
     font-weight: 400;
 }
 
-#order .caption, #contact .caption{
+#order .caption,#contact .caption{
     margin-bottom: 1rem;
     font-size: var(--font-size-medium);
     font-weight: bold;
     color: var(--primary-color-red);
 }
 
-#order .order-guide, .contacts{
+#order .order-guide{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px,2fr)) ;
     gap: 1rem;
@@ -34,14 +34,22 @@
     align-self: center;
 }
 
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
 .guide{
     max-width: 100%;
-    padding: 2rem;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    gap: 2rem;
     box-shadow: -15px -15px 15px rgba(0, 0, 0, 0.329),
     15px 15px 15px rgba(0, 0, 0, 0.1);
     background: var(--primary-color-red);
@@ -53,6 +61,16 @@
     font-weight: 400;
 }
 
+.guide h2{
+    margin: 1rem auto 1.5rem auto;
+    text-transform: uppercase;
+    font-size: var(--font-size-medium);
+}
+
+#order i{
+    color: var(--secondary-color-beige);
+    font-size: var(--font-size-xtra-big);
+}
 
 
 #contact{
@@ -62,6 +80,7 @@
 
 #contact .caption{
     margin-bottom: 1.5rem;
+    font-family: 'adelia';
 }
 
 .contacts li{
@@ -78,11 +97,21 @@
 }
 
 .contacts i{
-    font-size: var(--font-size-big) ;
+    font-size: var(--font-size-big);
+}
+
+.contacts *{
+    color: var(--primary-color-red);
+    font-weight: 400;
+}
+
+#contact .title{
+    font-weight: bold;
 }
 
 @media (min-width: 48rem) {
 
+    
 #contact .title, #contact .caption{
     text-align: center;
 }

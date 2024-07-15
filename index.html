@@ -9,12 +9,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/landing-page.css">
-    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/menu-grid.css">
     <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/services.css">
+    <link rel="stylesheet" href="styles/order-guide.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/aos.css">
 
@@ -62,6 +64,7 @@
 
     <section id="menu">
         <h1 class="title scale-out">MENU</h1>
+        <p id="caption">Explore Our Premium Desserts!</p>
         <ul class="menu-grid">
             <li class="slide-out stager">
                 <div class="image"><a href="menu/cake-shots.html"><img src="https://res.cloudinary.com/duqweg9fr/image/upload/v1720975773/Creme%20Chaos/cake-shots_1_waxzyl.jpg" alt=""></a></div>
@@ -111,19 +114,40 @@
         <h2 class="caption hidden">Follow these steps to place your order</h2>
         <div class="order-guide">
             <div class="guide slide-out stager">
-                <h2>Place your order 2-3 days prior</h2>
-                <p>To place an order, you need to write to us via DM <a href="https://www.instagram.com/creme_chaos/">@creme_chaos</a></p>
+                <i class='bx bxs-message-rounded-dots hidden stager'></i>
+                <h2 class="hidden stager">Place your order 2-3 days prior</h2>
+                <p class="hidden stager">To place an order, please send us a DM via Instagram <a href="https://www.instagram.com/creme_chaos/">@creme_chaos.</a></p>
             </div>
             <div class="guide slide-out stager">
-                <h2>A general Invoice along with a QR code will be sent to you</h2>
-                <p>To confirm your order 65% of advance payment is required</p>
+                <i class='bx bx-qr-scan hidden stager' ></i>
+                <h2 class="hidden stager">You will receive a general invoice along with a QR code</h2>
+                <p class="hidden stager">To confirm your order 65% of advance payment is required.</p>
             </div>
             <div class="guide slide-out stager">
+                <i class='bx bxs-gift hidden stager' ></i>
                 <h2>Order Pickup</h2>
-                 <p> On the day of your order, you can come and pick it up at anytime, according to our Business hours</p>
-                 <p>The due payment should be fullfilled on the day of pick up</p>
+                 <p class="hidden stager"> You can pick up your order at anytime during our business hours on the scheduled day. Please ensure the payment is completed when you come to pick up your order.</p>
             </div>
         </div>
+    </section>
+
+    <section id="contact">
+        <p class="title scale-out"><span></span> CONTACT US</p>
+        <h2 class="caption slide-out"> For Further Inquiries Get in touch with us</h2>
+        <ul class="contacts">
+            <li class="hidden stager">
+                <i class='bx bxl-instagram-alt'></i>
+                <p><a href="">@creme_chaos</a></p>
+            </li>
+            <li class="hidden stager">
+                <i class='bx bxl-whatsapp' ></i>
+                <p>+91 905 31 558</p>
+            </li>
+            <li class="hidden stager">
+                <i class='bx bxs-envelope' ></i>
+                <a href="mailto:nashimeher@gmail.com">nashimeher@gmail.com</a>
+            </li>
+        </ul>
     </section>
       </main>
       <footer>
@@ -132,7 +156,7 @@
                 <p class="logo">Creme Chaos Patisserie - By Nashika</p>
             </li>
             <li class="hidden stager">
-                <p class="cc">Copyrights claims 2024 - Designed & Developed By Nashika</p>
+                <p class="cc"><i class='bx bxs-copyright' ></i> Copyrights claims 2024 - Designed & Developed By Nashika</p>
             </li>
         </ul>
       </footer>
